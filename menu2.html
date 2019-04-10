@@ -1,0 +1,87 @@
+
+<html>
+    <style>
+        ul {
+            margin:0;
+        
+            padding-left:0;
+            list-style: none;
+            display: block;
+            
+           
+        }
+        
+        li{
+            padding:10px;
+            float:left;
+            background-color: #FFFB0D;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        li:hover{
+            background-color: #FF990D;
+        }
+        
+        .smallmenu{
+            background-color: #FFCC1A;
+            box-sizing:border-box;
+        }
+        
+        .smallmenu li{
+            
+            display:none;
+            
+        }
+        
+        .smallmenu:hover li{
+            overflow:none;
+            display:block;
+            box-sizing: border-box;
+            float:none;
+            
+        }
+        
+        .smallmenu:hover .listtitle{
+           padding-bottom: 10px;
+            padding-top:10px;
+            padding-left: 10px;
+            padding-right:10px;
+        }
+
+     .smallmenu:hover {
+          padding:0;  
+         
+        }
+        
+        
+         
+      
+      </style>
+   
+<body>    
+<ul class="bigmenu">
+    <li> Title1</li>
+    <li>Title2</li>
+    <li class="smallmenu"><div class="listtitle">Dropdown</div>
+    <ul >
+        <li>Sub1
+ 
+        
+        
+        </li>
+        
+    <li>Sub2</li>    
+    </ul>
+    </li>
+    <li> Title3</li>
+  
+    
+    </ul>
+    </body>
+
+
+
+
+
+</html>
