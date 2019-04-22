@@ -1,0 +1,131 @@
+<html>
+    
+    <body>
+        <style>
+            ul{
+                margin:0px;
+                padding:0px;
+                list-style: none;
+            }
+            
+            ul{
+                padding:0;
+            }
+            
+            .listtitle{
+                float:left;
+                margin-right: 10px;
+            }
+            .bar li{
+                position:relative;
+                top:-8px;
+                float:left;
+                margin-left:5px;
+               display:none;
+                opacity:0;
+                visibility:hidden;
+
+                padding-left:10px;
+                padding-right:10px;
+                padding-top:10px;
+                padding-bottom:10px;
+                box-sizing:border-box;
+                transition-delay: 0.25s
+                transition:background-color 2s;
+            }
+            
+            .bar{
+                text-align: left;
+                padding:10px;
+                box-sizing: border-box;
+                width:50px;
+                height:40px;
+                background-color: #1385FF;
+                margin-top:0px;
+                transition: background-color 0.25s;
+             
+            }
+            .bar:hover{
+                width:172px;
+                cursor: pointer
+                border:2px solid  #1385FF;;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+                background-color: #004799;
+
+            }
+            
+            @keyframes appear{
+                from {
+                    opacity:0;
+                }
+                to{
+                    opacity:100;
+                }
+            }
+            .bar:hover li{
+                display: block;
+                visibility: visible;
+                animation-name:appear;
+                animation-duration: 0.50s;
+                opacity:100;
+                background-color: #2D5C99;
+                color:white;
+               /* border:1px white;*/
+                border-radius: 3px;
+            }
+            
+           .bar:hover li:hover{
+                background-color: #EDFF7C;
+                color:black;
+               cursor: pointer;
+               
+            }
+          
+            .bar4:hover{
+                width:230px;!important
+            }
+        </style>
+        
+        
+    <ul class="mainmenu">
+        <li class="bar bar1">
+            <ul><div class="listtitle">Bar1</div>
+            <li class="listelement">sub1</li>
+            <li class="listelement">sub2</li>
+            </ul>
+        </li>
+        <li class="bar">
+        <ul><div class="listtitle">Bar2</div>
+            <li class="listelement">sub1</li>
+            <li class="listelement">sub2</li>
+            
+        </ul></li>
+         <li class="bar">
+        <ul><div class="listtitle">Bar3</div>
+            <li class="listelement">sub1</li>
+            <li class="listelement">sub2</li>
+            
+        </ul></li>
+         <li class="bar bar4">
+        <ul><div class="listtitle">Bar4</div>
+            <li class="listelement">sub1</li>
+            <li class="listelement">sub2</li>
+            <li class="listelement">sub3</li>
+
+            
+            
+        </ul></li>
+        
+    </ul>
+    
+        
+    
+    
+    
+    
+    
+    
+    </body>
+
+</html>
